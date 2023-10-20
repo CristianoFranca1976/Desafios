@@ -1,0 +1,210 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #19063e 0%, #30030abe 100%);
+}
+#container {
+  width: 700px;
+  height: 950px;
+  background-image: url(assets/fundo.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  border-radius: 10px;
+}
+#one,
+#two,
+#three,
+#four {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 10px;
+  margin-left: 20px;
+}
+#selecionados,
+#selecionados1,
+#selecionados2,
+#selecionados3 {
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: auto;
+  padding: 5px;
+  margin-left: 20px;
+}
+select {
+  width: 80px;
+}
+form {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+label {
+  width: 150px;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  gap: auto;
+  justify-content: space-between;
+  color: #30030abe;
+}
+input {
+  width: 50px;
+  height: auto;
+  text-align: none;
+}
+section {
+  width: auto;
+  height: auto;
+  padding: 10px;
+}
+p {
+  border-bottom: 1px dotted #0a0892be;
+  width: 150px;
+  height: auto;
+  list-style-type: none;
+}
+button {
+  width: 180px;
+  height: 60px;
+  cursor: pointer;
+  background: transparent;
+  border: 1px solid #30030abe;
+  outline: none;
+  transition: 1s ease-in-out;
+}
+button:hover {
+  transition: 1s ease-in-out;
+  background: #30030abe;
+}
+button span {
+  color: #30030abe;
+  font-size: 18px;
+  font-weight: 100;
+}
+button span:hover {
+  color: white;
+}
+.botton {
+  bottom: 0;
+  float: right;
+  position: sticky;
+  border-radius: 10px;
+  text-align: center;
+  padding: 10px;
+  transition: all 0.9s ease;
+  background: linear-gradient(45deg, #372d48 0%, #530c2b 47%, #c59237 100%);
+}
+.botton a {
+  text-decoration: none;
+  color: rgb(247, 241, 241);
+  text-transform: uppercase;
+  background: transparent;
+  text-shadow: 15px 13px 14px rgba(18, 8, 5, 0.92);
+}
+.botton:hover {
+  background-color: rgba(255, 0, 0, 0.502);
+  border-radius: 10px;
+  border-color: black;
+  box-shadow: 0px 10px 13px -7px #000000,
+    12px 12px 44px 38px rgba(56, 5, 27, 0.41);
+}
+.back a {
+  position: sticky;
+  bottom: 0;
+  padding: 10px;
+  color: #fff;
+  text-transform: uppercase;
+  transition: all 0.9s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  border-radius: 10px;
+  border: none;
+  background: #efefef;
+  box-shadow: 2px 2px 4px #c8d0e7, -1px -1px 3px #fff;
+  color: #585858;
+  text-decoration: none;
+}
+.back:active {
+  box-shadow: inset 1px 1px 3px #c8d0e7, inset -1px -1px 3px #fff;
+}
+.back:hover {
+  box-shadow: 1px 1px 25px 10px rgba(34, 34, 34, 0.95);
+  float: left;
+  border-radius: 10px;
+}
+footer {
+  width: 460px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: auto;
+  padding: 32px;
+}
+@media only screen and (max-width: 600px) {
+  body {
+    margin: auto;
+  }
+  #container {
+    margin-top: 100px;
+    width: 300px;
+    gap: 0;
+    padding: auto;
+  }
+  footer {
+    width: 300px;
+    height: auto;
+  }
+  #one,
+  #two,
+  #three,
+  #four {
+    gap: 0;
+    width: 300px;
+    display: block;
+    padding: 0;
+    
+  }
+  form {
+    display: block;
+    gap: 0;
+  }
+  label {
+  width: 280px;
+   margin: 0;
+
+  }
+  section {
+    margin-left: -10px;
+  }
+  select {
+    width: 150px;
+
+  }
+  input {
+   width: 142px;
+  }
+  p {
+    width: auto;
+    height: auto;
+    padding: auto;
+    margin: auto;
+  }
+  
+}

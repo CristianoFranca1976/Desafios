@@ -1,0 +1,106 @@
+body {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+height: 100vh;
+background: radial-gradient(ellipse at center, #6A6518 0%, #070243 100%);
+}
+#container {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ height: auto;
+ width: auto;
+ margin: 0;
+}
+form {
+  border: 1px solid silver;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: center;
+  width: auto;
+  height: auto;
+  padding: 32px;
+  box-shadow: 1px 1px 25px 21px rgba(34,34,34,0.95);
+}
+#assunto, #nomecompleto, #Email {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: auto;
+  width: 300px;
+  height: auto;
+}
+h1 {
+  color: #FFFFFF;
+  background: transparent;
+  text-shadow: 1px 3px 0 #969696, 1px 13px 5px #aba8a8;
+  color: #FFFFFF;
+}
+label {
+  margin: 0;
+}
+select {
+  width: 170px;
+}
+.botton {
+  bottom: 0;
+  float: right;
+  position: sticky;
+  border-radius: 10px;
+  text-align: center;
+  padding: 10px;
+  transition: all 0.9s ease;
+  background: linear-gradient(45deg, #372d48 0%, #530c2b 47%, #c59237 100%);
+}
+.botton a {
+  text-decoration: none;
+  color: rgb(247, 241, 241);
+  text-transform: uppercase;
+  background: transparent;
+  text-shadow: 15px 13px 14px rgba(18, 8, 5, 0.92);
+}
+.botton:hover {
+  background-color: rgba(255, 0, 0, 0.502);
+  border-radius: 10px;
+  border-color: black;
+  box-shadow: 0px 10px 13px -7px #000000,
+    12px 12px 44px 38px rgba(56, 5, 27, 0.41);
+}
+.back a {
+  position: sticky;
+  bottom: 0;
+  padding: 10px;
+  color: #fff;
+  text-transform: uppercase;
+  transition: all 0.9s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  border-radius: 10px;
+  border: none;
+  background: #efefef;
+  box-shadow: 2px 2px 4px #c8d0e7, -1px -1px 3px #fff;
+  color: #585858;
+  text-decoration: none;
+}
+.back:active {
+  box-shadow: inset 1px 1px 3px #c8d0e7, inset -1px -1px 3px #fff;
+}
+.back:hover {
+  box-shadow: 1px 1px 25px 10px rgba(34,34,34,0.95);
+  float: left;
+  border-radius: 10px;
+}
+footer {
+  width: 308px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: auto;
+  padding: 32px;
+
+}

@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Cristiano Franca" />
+    <meta name="robots" content="index, follow" />
+    <meta name="decription" content="Exemplo de Form" />
+    <link rel="stylesheet" href="style2.css" />
+    <link rel="shortcut icon" href="assets/LetraC.png" type="image/x-icon" />
+    <title>Form Exemplo</title>
+  </head>
+  <body>
+    <div id="container">
+       
+        <div id="one">
+      <form
+        action="https://formsubmit.co/49f120962618ac269b0179357f2a2502"
+        method="post"
+      >
+        <label for="frutas">Fruta: &nbsp  &nbsp
+        <select
+          name="frutas"
+          title="frutas"
+          id="frutas"
+          onchange="atualizarLista()"
+        >
+          <optgroup label="FRUTAS">
+            <option value=""></option>
+            <option value="Maçã">Maçã</option>
+          <option value="Banana">Banana</option>
+          <option value="Laranja">Laranja</option>
+          <option value="Tangerina">Tangerina</option>
+          <option value="Uva">Uva</option>
+          <option value="Abacaxi">Abacaxi</option>
+          <option value="Caqui">Caqui</option>
+          <option value="Figo">Figo</option>
+          <option value="kiwi">kiwi</option>
+          <option value="Limão">Limão</option>
+          <option value="Manga">Manga</option>
+          <option value="Maracujá">Maracujá</option>
+          <option value="Melancia">Melancia</option>
+          <option value="Melão">Melão</option>
+          <option value="Morango">Morango</option>
+          <option value="Pera">Pera</option>
+          <option value="Pêssego">Pêssego</option>
+          <option value="Tâmara">Tâmara</option>
+          <option value="Cereja">Cereja</option>
+          <option value="Ameixa">ameixa</option>
+          </optgroup>
+        </select>
+        </label>
+       
+        <label for="text">Quantidade:
+        <input
+          type="text"
+          id="text"
+          name="quantidade_Fruta"
+          placeholder="Escreva aqui"
+          oninput="atualizarText()"
+        />
+        </label>
+        <label for="quantidade">Tipos:
+        <select
+          name="Tipo_Fruta"
+          title="quantidade"
+          id="quantidade"
+          onchange="atualizarListaTipo()"
+        >
+          <optgroup label="Tipos">
+            <option value=""></option>
+            <option value="Kilo">Kilo</option>
+            <option value="Grama">Grama</option>
+            <option value="Unidade">Unidade</option>
+            <option value="Pacotes">Pacotes</option>
+            <option value="Litros">Litros</option>
+            <option value="Mililitro">Mililitro</option>
+          </optgroup>
+        </select>
+        </label>
+       </div>
+       <div id="two">
+         <label for="Vegetais">Vegetal:
+        <select
+          name="Vegetais"
+          title="Vegetais"
+          id="Vegetais"
+          onchange="atualizarLista1()"
+        >
+        <optgroup label="Vegetais">Vegetais
+          <option value=""></option>
+          <option value="Abobrinha">Abobrinha</option>
+          <option value="Berinjela">Berinjela</option>
+          <option value="Chuchu">Chuchu</option>
+          <option value="Batata">Batata</option>
+          <option value="Inhame">Inhame</option>
+          <option value="Beterraba">Beterraba</option>
+          <option value="Cenoura">Cenoura</option>
+          <option value="Alho">Alho</option>
+          <option value="Cebola">Cebola</option>
+          <option value="Aipo">Aipo</option>
+          <option value="Aspargo">Aspargo</option>
+          <option value="Batata-doce">Batata-doce</option>
+          <option value="Couve-flor">Couve-flor</option>
+          <option value="Brócolis">Brócolis</option>
+          <option value="Couve">Couve</option>
+          <option value="Agrião">Agrião</option>
+          <option value="Alface">Alface</option>
+          <option value="Pepino">Pepino</option>
+          <option value="Repolho">Repolho</option>
+          <option value="Mandioca">Mandioca</option>
+          <option value="Arroz">Arroz</option>
+          <option value="Milho">Milho</option>
+          <option value="Feijão">Feijão</option>
+          <option value="pimentão">pimentão</option>
+          </optgroup>
+        </select>
+      </label>
+      <label for="text1">Quantidade:
+        <input
+          type="text1"
+          id="text1"
+          name="quantidade_Vegetais"
+          placeholder="Escreva aqui"
+          oninput="atualizarText1()"
+        />
+        </label>
+        <label for="quantidade1">Tipos:
+        <select
+          name="Tipo_Vegetais"
+          title="quantidade1"
+          id="quantidade1"
+          onchange="atualizarListaTipo1()"
+        >
+          <optgroup label="Tipos">
+            <option value=""></option>
+            <option value="Kilo">Kilo</option>
+            <option value="Grama">Grama</option>
+            <option value="Unidade">Unidade</option>
+            <option value="Pacotes">Pacotes</option>
+            <option value="Litros">Litros</option>
+            <option value="Mililitro">Mililitro</option>
+          </optgroup>
+        </select>
+        </label>
+       </div>
+
+       <div id="three">
+        <label for="Bebidas"
+        >Bebidas:
+        <select
+          name="Bebidas"
+          title="Bebidas"
+          id="Bebidas"
+          onchange="atualizarLista2()"
+        >
+        <optgroup label="Refrigerantes">
+            <option value=""></option>
+         <option value="Coca-Cola">Coca-Cola</option>
+         <option value="Tango">Tango</option>
+         <option value="Limonada">Limonada</option>
+         <option value="Soda">Soda</option>
+         <option value="Uva">Uva</option>
+         <option value="Guaraná">Guaraná</option>
+         <option value="Outros">Outros</option>
+        </optgroup>
+          <optgroup label="Sucos">
+          <option value="Laranja">Laranja</option>
+          <option value="Maçã">Maçã</option>
+          <option value="Manga">Manga</option>
+          <option value="Uva">Uva</option>
+          <option value="Limão">Limão</option>
+          <option value="Frutas Citricas">Frutas Citricas</option>
+          <option value="Pêssego">Pêssego</option>
+          <option value="Maracujá">Maracujá</option>
+          <option value="Melancia">Melancia</option>
+          <option value="Abacaxi">Abacaxi</option>
+          <option value="Melão">Melão</option>
+          <option value="Morango">Morango</option>
+          </optgroup>
+          <optgroup label="Bebida Alcoólica">
+          <option value="Cerveja">Cerveja</option>
+          <option value="Vinho Tinto">Vinho Tinto</option>
+          <option value="Vinho Seco">Vinho Seco</option>
+          <option value="Vinho Branco">Vinho Branco</option>
+          <option value="champanhe">champanhe</option>
+          </optgroup>
+        </select>
+      </label>
+      <label for="text2">Quantidade:
+        <input
+          type="text2"
+          id="text2"
+          name="quantidade_Bebidas"
+          placeholder="Escreva aqui"
+          oninput="atualizarText2()"
+        />
+        </label>
+        <label for="quantidade2">Tipos:
+        <select
+          name="Tipo_Bebidas"
+          title="quantidade2"
+          id="quantidade2"
+          onchange="atualizarListaTipo2()"
+        >
+          <optgroup label="Tipos">
+            <option value=""></option>
+            <option value="Kilo">Kilo</option>
+            <option value="Grama">Grama</option>
+            <option value="Unidade">Unidade</option>
+            <option value="Pacotes">Pacotes</option>
+            <option value="Litros">Litros</option>
+            <option value="Mililitro">Mililitro</option>
+          </optgroup>
+        </select>
+        </label>
+       </div>
+       <div id="four">
+        <label for="Temperos"
+        >Tempero:
+        <select
+          name="Temperos"
+          title="Temperos"
+          id="Temperos"
+          onchange="atualizarLista3()"
+        >
+        <optgroup label="Temperos">
+            <option value=""></option>
+          <option value="Alecrim ">Alecrim</option>
+          <option value="Hortelã ">Hortelã</option>
+          <option value="Salsa ">Salsa</option>
+          <option value="Manjericão ">Manjericão</option>
+          <option value="Orégano ">Orégano</option>
+          <option value="Cebolinha ">Cebolinha</option>
+          <option value="Erva-doce ">Erva-doce</option>
+          <option value="Louro ">Louro</option>
+          <option value="Coentro ">Coentro</option>
+          <option value="Pimenta-do-reino ">Pimenta-do-reino </option>
+
+          </optgroup>
+        </select>
+      </label>
+      <label for="text3">Quantidade:
+        <input
+          type="text3"
+          id="text3"
+          name="quantidade_Tempero"
+          placeholder="Escreva aqui"
+          oninput="atualizarText3()"
+        />
+        </label>
+        <label for="quantidade3">Tipos:
+        <select
+          name="Tipo_Tempero"
+          title="quantidade3"
+          id="quantidade3"
+          onchange="atualizarListaTipo3()"
+        >
+          <optgroup label="Tipos">
+            <option value=""></option>
+            <option value="Kilo">Kilo</option>
+            <option value="Grama">Grama</option>
+            <option value="Unidade">Unidade</option>
+            <option value="Pacotes">Pacote</option>
+            <option value="Litros">Litro</option>
+            <option value="Mililitro">Mililitro</option>
+          </optgroup>
+        </select>
+        </label>
+       </div>
+    
+        <section>
+        <div id="selecionados">
+          <p id="selec1"></p>
+          <p id="selec2"></p>
+          <p id="selec3"></p>
+        </div>
+        <div id="selecionados1">
+            <p id="selec4"></p>
+            <p id="selec5"></p>
+            <p id="selec6"></p>
+          </div>
+          <div id="selecionados2">
+            <p id="selec7"></p>
+            <p id="selec8"></p>
+            <p id="selec9"></p>
+          </div>
+          <div id="selecionados3">
+            <p id="selec10"></p>
+            <p id="selec11"></p>
+            <p id="selec12"></p>
+          </div>
+          </section>
+        <button type="submit">
+            
+            <span>Enviar</span></button>
+      </form>
+    </div>
+    <footer>
+      <div class="back">
+        <a href="index1.html">Back</a>
+      </div>
+      <div class="botton">
+        <a href="index3.html">Desafio 4</a>
+      </div>
+      </footer>
+    <script src="javascript2.js"></script>
+  </body>
+</html>
+
